@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <script src="https://kit.fontawesome.com/b4b20d2e9c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h3>Bem vindo</h3>
+        <input  id="email" type="text" name="email" placeholder="Seu email">
+        <input id="password" type="password" name="senha" placeholder="sua senha"/>
+        <input type="submit" name="acao" value="Enviar">
+        <div class="social">
+        <i class="fab fa-facebook" ></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-twitter"></i>
+            </div>
+    </form>
+
+    <script>
+        var email = document.getElementById("email");
+        var password = document.getElementById("password");
+
+        email.addEventListener('focus',()=>{
+            email.style.backgroundColor = " rgb(11, 151, 104)";
+            email.style.color="#ccc"
+        });
+        email.addEventListener('blur',()=>{
+            email.style.backgroundColor = "#ccc";
+            email.style.color="rgb(0, 0, 0)"
+        });
+
+        
+    
+
+
+
+    </script>
+
+</body>
+</html>
